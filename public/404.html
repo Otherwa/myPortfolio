@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found</title>
+
+  <style media="screen">
+    :root {
+      --tab: 4.9rem;
+      --mob: 5rem;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: monospace;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    body {
+      background-color: #101010;
+    }
+
+    section {
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bornfield {
+      width: 100%;
+      height: auto;
+      pointer-events: none !important;
+    }
+
+    .msg {
+      position: relative;
+      top: 10rem;
+      font-size: 1.4rem;
+      padding: 1.35rem;
+    }
+
+    /* tablet */
+
+    @media screen and (max-width: 768px) {
+      .msg {
+        top: var(--tab);
+      }
+    }
+
+    /* mobile */
+
+    @media screen and (max-width: 468px) {
+      .msg {
+        top: var(--mob);
+      }
+    }
+  </style>
+
+  </style>
+</head>
+
+<body>
+  <section id="section1">
+    <div class="msg">
+      <br>
+      <p>
+        No Such Route exisit
+        <br>
+        <br>
+        <span id="text"></span>
+      </p>
+    </div>
+  </section>
+</body>
+<script>
+
+  var x = [
+    'https://64.media.tumblr.com/249606e6ce9061aa021696c11a328a6b/tumblr_p4clpbr0YD1wdgt9zo1_640.gifv',
+    'https://68.media.tumblr.com/d6d6bab2e0e87c92d5559dad572e505b/tumblr_p1g4ab1J9e1usyygio1_540.gif',
+    'https://thumbs.gfycat.com/ComposedCommonIberianbarbel-size_restricted.gif',
+    'https://i.pinimg.com/originals/cb/9d/d2/cb9dd263099adac75b965e94d15b06b4.gif',
+    'https://media2.giphy.com/media/QMHoU66sBXqqLqYvGO/giphy.gif?cid=790b761173de0bf1fcbd8fb0a1783a6c5ce6c395a4540fd2&rid=giphy.gif'
+  ]
+
+  document.getElementById("section1").style.backgroundImage = "url(" + x[Math.floor(Math.random() * x.length)] + ")";
+  var i = 5
+  setInterval(() => {
+    text = 'Redirecting in ' + i + ' Seconds ...';
+    console.log(text);
+    document.getElementById('text').innerHTML = text;
+    i = i - 1;
+  }, 1000)
+
+  setTimeout("location.href = '/';", 4900);
+</script>
+
+</html>
