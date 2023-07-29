@@ -1,3 +1,7 @@
+@import url('./splash.css');
+@import url('./footer.css');
+@import url('./about.css');
+
 *,
 *::after,
 *::before {
@@ -25,12 +29,16 @@
     }
 }
 
-/*  */
+/* darkmode */
+.darkmode-layer,
+.darkmode-toggle {
+    z-index: 500;
+}
 
 body {
     margin: 0;
     --color-text: #111;
-    --color-bg: #f8ecde;
+    --color-bg: white;
     --color-link: #b19e7f;
     --color-link-hover: #000;
     color: var(--color-text);
@@ -42,8 +50,7 @@ body {
 
 /* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
 
-main::before,
-#splah::before {
+main::before {
     animation: grain 8s steps(10) infinite;
     background-image: url(../imgs/noise.png);
     content: '';
@@ -148,9 +155,9 @@ a:focus {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     user-select: none;
-    padding: 10vh 0 25vh;
+    padding: 15vh 0 15vh;
     --marquee-width: 100vw;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
@@ -193,25 +200,6 @@ a:focus {
     opacity: 0;
 }
 
-.menu__item-img {
-    pointer-events: none;
-    position: absolute;
-    height: 50vh;
-    max-height: 400px;
-    opacity: 0;
-    left: 100%;
-    top: 50%;
-    transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
-}
-
-.menu__item-link:hover+.menu__item-img {
-    opacity: 1;
-    transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 4deg);
-    transition: all 0.4s;
-}
-
-/* Make sure 3 items are visible in the viewport by setting suitable font size. */
-
 .marquee {
     position: absolute;
     top: 0;
@@ -219,7 +207,7 @@ a:focus {
     width: var(--marquee-width);
     overflow: hidden;
     pointer-events: none;
-    mix-blend-mode: color-burn;
+    /* mix-blend-mode: color-burn; */
 }
 
 .marquee__inner {
@@ -250,6 +238,15 @@ a:focus {
     padding: 0 3vw;
     font-weight: 900;
     line-height: 1.15;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .menu__item-link,
+    .marquee span {
+        font-size: 15vw !important;
+        padding: 0 5vw;
+    }
 }
 
 .marquee span {
@@ -303,7 +300,7 @@ a:focus {
 
 .wrapper {
     display: flex;
-    height: 100vh;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center
 }
