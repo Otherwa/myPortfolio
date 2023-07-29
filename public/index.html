@@ -11,7 +11,7 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Primary Meta Tags -->
-    <title>Otherwa</title>
+    <title>Otherwa.md</title>
     <meta name="title" content="Otherwa" />
     <meta name="description" content="Readme.md" />
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico">
@@ -36,19 +36,20 @@
 <body>
     <!-- menu -->
     <!-- splash screen -->
-
-    <main>
-        <div id="load_screen">
-            <div id="loading">
-                <h1 id="pre_title">&copy;</h1>
-                <svg class="pyramid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 612">
-                    <path d="M533.7 342.3l-81.3 155.3 -66-364L533.7 342.3zM386.3 133.7l-182 260 248 104"
-                        style="fill:none;stroke-linejoin:round;stroke-width:2;stroke:#231F20" />
-                    <path d="M386.3 348.3l147.3-6 -329.3 51.3L386.3 348.3zM386.3 133.7v214.7l66 149.3"
-                        style="fill:none;stroke-linejoin:round;stroke-width:0.5;stroke:#231F20" />
-                </svg>
-            </div>
+    <div id="load_screen">
+        <div id="loading">
+            <h1 id="pre_title"></h1>
+            <svg class="pyramid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 612">
+                <path d="M533.7 342.3l-81.3 155.3 -66-364L533.7 342.3zM386.3 133.7l-182 260 248 104"
+                    style="fill:none;stroke-linejoin:round;stroke-width:2;stroke:#231F20" />
+                <path d="M386.3 348.3l147.3-6 -329.3 51.3L386.3 348.3zM386.3 133.7v214.7l66 149.3"
+                    style="fill:none;stroke-linejoin:round;stroke-width:0.5;stroke:#231F20" />
+            </svg>
         </div>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <main id="swup" class="transition-fade">
         <div class="wrapper">
             <nav class="menu">
                 <div class="menu__item">
@@ -97,7 +98,6 @@
                 </div>
             </nav>
         </div>
-        <!-- footer -->
         <div id="footer">
             <span><i class="fa-brands fa-twitter"></i> &nbsp;<a href="https://twitter.com/atharv2002">Twitter</a></span>
             <span><i class="fa-solid fa-envelope"></i>&nbsp;<a href="mailto:atharvdesai2002@gmail.com">Email</a></span>
@@ -105,6 +105,7 @@
             <span><i class="fa-brands fa-instagram"></i>&nbsp;<a
                     href="https://www.instagram.com/otherwa.jpg">Instagram</a></span>
         </div>
+        <!-- footer -->
     </main>
     <!-- scripts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -122,6 +123,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
         integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swup@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <!--===== MAIN JS =====-->
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>

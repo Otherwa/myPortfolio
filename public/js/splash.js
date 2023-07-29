@@ -1,13 +1,6 @@
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 1000,
-    delay: 200,
-    reset: true,
-});
+import { sr } from './slider.js';
 
 document.addEventListener('DOMContentLoaded', function () {
-
     if (sessionStorage.getItem('splash') !== 'true') {
         sessionStorage.setItem('splash', 'true');
         var svg = new Walkway({

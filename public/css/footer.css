@@ -6,8 +6,14 @@
     margin-left: 3vw;
     justify-content: center;
     align-items: center;
-    top: 15vh;
+    /* top: 2.5vh; */
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width:784px) {
+    #footer {
+        top: 10.5vh;
+    }
 }
 
 #footer span {
