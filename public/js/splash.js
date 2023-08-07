@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
             duration: 5500,
             easing: 'Linear',
         }).draw(function () {
-            console.dir('Finished Pyramid')
             sr.reveal('.menu', { delay: 1000, distance: "20px", origin: 'bottom' });
         });
         $(function () {

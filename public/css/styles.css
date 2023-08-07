@@ -2,7 +2,12 @@
 @import url('./footer.css');
 @import url('./about.css');
 @import url('./swup.css');
+@import url('./project.css');
 @import url('./about.css');
+@import url('./contact.css');
+@import url('./exp.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 
 *,
 *::after,
@@ -10,11 +15,16 @@
     box-sizing: border-box;
 }
 
+.about a,
+.work a {
+    color: #000000 !important;
+    font-family: monospace;
+}
 
 :root {
     --left-right-margin: 240px;
     --left-right-internal-margin: 24px;
-    --top-margin: 240px;
+    --top-margin: 120px;
     --top-margin-mobile: 40vh;
     --top-internal-margin: 24px;
     --border-radius: 48px;
@@ -64,7 +74,8 @@ html[data-theme=dark] {
 }
 
 body,
-html {
+html,
+main {
     background-color: #f3f2f9;
     background-color: var(--background-color);
     color: var(--color);
@@ -78,7 +89,8 @@ html {
     font-variation-settings: "wght" 500, "wdth" 100;
     font-weight: unset;
     font-size: 1em;
-    transition: .25s
+    transition: .25s;
+    z-index: 0;
 }
 
 h1,
@@ -296,7 +308,6 @@ table tr:last-child td {
 }
 
 .canvas {
-    z-index: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -307,7 +318,6 @@ table tr:last-child td {
 
 .container {
     position: relative;
-    z-index: 1;
     /* overflow: hidden; */
     width: 100%
 }
@@ -394,8 +404,9 @@ body.dark .link-underline {
 
 /* scroll-bar */
 @media only screen and (max-width: 600px) {
-    #swup {
-        height: 100vh !important;
+    #footer {
+        position: absolute;
+        bottom: 2rem;
     }
 }
 
@@ -419,7 +430,7 @@ body.dark .link-underline {
 /* darkmode */
 .darkmode-layer,
 .darkmode-toggle {
-    z-index: 500;
+    z-index: 1500;
 }
 
 body {
@@ -437,9 +448,6 @@ body {
 }
 
 /* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
-#swup {
-    height: 150vh;
-}
 
 body::before {
     animation: grain 8s steps(10) infinite;
@@ -590,14 +598,17 @@ a:focus {
     opacity: 0;
 }
 
+/* progess bar */
+
 .marquee {
+    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
     width: var(--marquee-width);
     overflow: hidden;
     pointer-events: none;
-    /* mix-blend-mode: color-burn; */
+    mix-blend-mode: color-burn;
 }
 
 .marquee__inner {
@@ -626,8 +637,9 @@ a:focus {
     white-space: nowrap;
     font-size: var(--item-font-size);
     padding: 0 3vw;
-    /* font-weight: 900; */
+    font-weight: 690;
     line-height: 1.15;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -698,4 +710,51 @@ a:focus {
     align-items: center;
     display: flex;
     /* overflow-y: hidden; */
+}
+
+@media only screen and (max-width: 600px) {
+    .img>img {
+        display: flex !important;
+        transition: 1s;
+    }
+}
+
+.img>img {
+    transition: 1s;
+    display: none;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__item-link:hover+.menu__item-img {
+    opacity: 0.8 !important;
+    transform: translate3d(calc(-100% - 6vw), -30%, 0) rotate3d(0, 0, 1, 4deg);
+    transition: all 0.4s;
+}
+
+@media (max-width:786px) {
+    .menu__item-img {
+        display: none !important;
+    }
+}
+
+.menu__item-img {
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    border-radius: 0.55rem;
+    height: 50vh;
+    max-height: 400px;
+    opacity: 0;
+    left: 100%;
+    top: 50%;
+    transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
+}
+
+.darkmode--activated img {
+    filter: invert(1) !important;
 }

@@ -1,24 +1,24 @@
-import { experience } from "../store/exp.js";
+// import { } from "./exp.js";
 import { } from "./splash.js";
 import { } from "./dark.js";
 import { sr } from './slider.js'
-console.table({ "design & coded by": "Atharv Desai" })
-
+import { literallyme } from "./me.js";
 // swup
-// const swup = new Swup({
-//     containers: ["#swup"]
-// });
+const swup = new Swup({
+    containers: ["#swup"]
+});
+
+console.log("%cdesign & coded by Atharv Desai", "color: yellow; background-color: blue;padding: 2px");
+console.log(literallyme);
+
+swup.hooks.on('page:view', () => {
+    // This runs after every page change by swup
+    sr.reveal('.about-left', { delay: 200, origin: "left" })
+    sr.reveal('.about-right', { delay: 200, origin: "top" })
+    sr.reveal('.wrapper', { delay: 100, origin: "bottom" })
+});
 
 
-sr.reveal('.about-left', { origin: "left" })
-sr.reveal('.about-right', { origin: "top" })
-
-// butter.js
-// butter.init({
-//     wrapperId: 'swup',
-//     wrapperDamper: 0.07,
-//     cancelOnTouch: true
-// });
 
 
 // splash screen

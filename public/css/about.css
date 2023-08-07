@@ -1,49 +1,3 @@
-.cursor,
-.cursor-dot {
-    position: fixed;
-    pointer-events: none;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    z-index: 999;
-    transform: translate(-50%, -50%);
-    -webkit-animation: .1s;
-    animation: .1s;
-    overflow: hidden
-}
-
-
-
-.cursor body.dark {
-    background-color: #f3f2f9;
-    border-color: #f3f2f9;
-    mix-blend-mode: difference
-}
-
-.cursor-dot {
-    width: 4px;
-    height: 4px;
-    background-color: #606887;
-    -webkit-animation: .4s linear;
-    animation: .4s linear;
-    mix-blend-mode: multiply
-}
-
-.cursor-dot .body.dark,
-body.dark .cursor {
-    background-color: #f3f2f9;
-    mix-blend-mode: difference
-}
-
-body.dark .cursor {
-    border-color: #f3f2f9
-}
-
-body.dark .cursor-dot {
-    background-color: #f3f2f9;
-    mix-blend-mode: difference
-}
-
 .noise {
     position: fixed;
     z-index: 9999;
@@ -170,17 +124,19 @@ body.dark .noise {
     flex-direction: row-reverse
 }
 
+
+
 @media(max-width: 47.99em) {
     .about {
         flex-direction: column;
-        margin: var(--top-margin) 0 0
+        margin: 2rem 0 0
     }
 }
 
 @media(max-width: 61.99em)and (orientation:portrait) {
     .about {
         flex-direction: column;
-        margin: var(--top-margin) 0 0
+        margin: 2.5rem 0 0
     }
 }
 
@@ -215,6 +171,8 @@ body.dark .noise {
 }
 
 .about-left .presentation-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400 !important;
     margin-top: var(--top-internal-margin);
     width: 75%
 }

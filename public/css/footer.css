@@ -10,16 +10,6 @@
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width:784px) {
-    #footer {
-        top: 10.5vh;
-    }
-}
-
-#footer span {
-    z-index: 2;
-}
-
 #footer span:hover {
     color: black;
 }
