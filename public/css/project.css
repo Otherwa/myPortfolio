@@ -1,7 +1,7 @@
 #prj li a {
     font-size: 3.9rem;
-    color: black;
-    mix-blend-mode: color-burn;
+    color: #a30000;
+    text-decoration: none;
 }
 
 #prj {
@@ -11,10 +11,79 @@
     margin-top: 4.2rem;
 }
 
+#prj li {
+    position: relative;
+    border: solid 1px black;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: 1rem 1rem 3rem 1rem;
+    height: 19rem;
+    transition: all 0.5s;
+}
+
+#prj li .inner-div {
+    position: inherit;
+    display: block;
+    left: 0;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    height: 18rem;
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    opacity: 0;
+    border-radius: 1rem;
+    transition: transform 0.5s, opacity 0.5s;
+    margin-left: 50%;
+}
+
+#prj li:hover .inner-div {
+    bottom: 0;
+    /* Move the inner div into view */
+    transform: translateY(15%);
+    /* Slide in from the bottom */
+    opacity: 1;
+}
+
+
+a:hover {
+    outline: none !important;
+}
+
+#prj li:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+#prj li:hover a {
+    color: white !important;
+    transition: all 0.5s ease;
+}
+
 @media(max-width:768px) {
+
+    #prj li .inner-div {
+        margin-left: 0%;
+        width: 100%;
+        z-index: 1;
+        height: inherit;
+    }
+
+    #prj li {
+        transition: all 0.5s;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        margin: 1rem;
+        height: 18rem;
+    }
+
     #prj {
         margin: 1rem;
+        line-height: 2.5rem !important;
     }
+
+
 
     #prj li a {
         font-size: 1.9rem;

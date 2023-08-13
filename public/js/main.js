@@ -16,6 +16,8 @@ swup.hooks.on('page:view', () => {
     sr.reveal('.about-left', { delay: 200, origin: "left" })
     sr.reveal('.about-right', { delay: 200, origin: "top" })
     sr.reveal('.wrapper', { delay: 100, origin: "bottom" })
+    sr.reveal('.wrapper1', { delay: 100, origin: "top" })
+    sr.reveal('#prj', { delay: 150, origin: "top" })
 });
 
 
