@@ -555,6 +555,7 @@ a:focus {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    height: 100vh;
     padding: 15vh 0 15vh;
     --marquee-width: 100vw;
     --offset: 20vw;
