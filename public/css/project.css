@@ -44,7 +44,7 @@
 #prj li:hover .inner-div {
     bottom: 0;
     /* Move the inner div into view */
-    transform: translateY(15%);
+    /* transform: translateY(15%); */
     /* Slide in from the bottom */
     opacity: 1;
 }
@@ -66,7 +66,7 @@
         margin-left: 0%;
         width: 100%;
         z-index: 1;
-        height: inherit;
+        height: max-content;
     }
 
     #prj li {
