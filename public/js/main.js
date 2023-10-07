@@ -9,7 +9,7 @@ const swup = new Swup({
     containers: ["#swup"]
 });
 
-console.log("%cdesign & coded by Atharv Desai", "color: yellow; background-color: blue;padding: 2px");
+console.log("design & coded by Atharv Desai");
 console.log(literallyme);
 
 

@@ -6,20 +6,17 @@
     margin-left: 3vw;
     justify-content: center;
     align-items: center;
-    /* top: 2.5vh; */
     flex-wrap: wrap;
+    bottom: 0;
 }
 
 #footer span:hover {
     color: black;
 }
 
-
-li:last-child {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-li:hover~li p {
-    animation: wave-animation 0.3s infinite;
+#footer>#footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

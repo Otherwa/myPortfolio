@@ -21,36 +21,10 @@
     transition: all 0.5s;
 }
 
-#prj li .inner-div {
-    left: 0;
-    width: 50%;
-    font-family: 'Poppins', sans-serif;
-    height: 18rem;
-    position: relative;
-    border: 3px solid black;
-    background-color: rgba(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 1rem;
-    opacity: 0;
-    font-size: 0.9rem;
-    color: #000;
-    border-radius: 1rem;
-    transition: transform 0.5s, opacity 0.5s;
-    margin-left: 50%;
-    font-size: 0.9rem;
-    z-index: 3;
-}
 
-#prj li:hover .inner-div {
-    bottom: 0;
-    /* Move the inner div into view */
-    /* transform: translateY(15%); */
-    /* Slide in from the bottom */
-    opacity: 1;
-}
 
 #prj li:hover {
-    background-color: black;
+    background-color: #000;
     color: white;
     transition: all 0.5s ease;
 }
