@@ -1,6 +1,6 @@
 #prj li a {
     font-size: 3.9rem;
-    color: #a30000;
+    color: var(--bleachred);
     text-decoration: underline;
 }
 
