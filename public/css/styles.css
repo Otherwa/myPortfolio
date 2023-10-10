@@ -568,7 +568,8 @@ body::before {
 
 /* ! bootstrap issue */
 a:hover {
-    color: transparent !important;
+    color: var(--bleachred) !important;
+    transition: all 0.5s ease-in-out;
 }
 
 .menu-item-link:hover~.marquee .marquee-inner {
