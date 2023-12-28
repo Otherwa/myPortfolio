@@ -4,12 +4,3 @@
 ## Overview
 
 Briefly describe your Firebase project and its purpose. Mention what problem it aims to solve or what functionality it provides.
-
-
-### Prerequisites
-
-List the prerequisites that users need to have in order to use your project. This may include software, hardware, or specific access permissions.
-
-### Installation
-
-Provide step-by-step instructions on how to install and set up your Firebase project
