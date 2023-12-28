@@ -5,19 +5,6 @@
 
 Briefly describe your Firebase project and its purpose. Mention what problem it aims to solve or what functionality it provides.
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Firebase Services Used](#firebase-services-used)
-- [Configuration](#configuration)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Getting Started
 
 ### Prerequisites
 
