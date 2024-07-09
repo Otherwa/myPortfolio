@@ -572,6 +572,11 @@ a:hover {
     transition: all 0.5s ease-in-out;
 }
 
+a:hover {
+    color: var(--bleachred) !important;
+    transition: all 0.5s ease-in-out;
+}
+
 .menu-item-link:hover~.marquee .marquee-inner {
     animation-play-state: running;
     opacity: 1;
@@ -664,6 +669,11 @@ a:hover {
 
 /* ? darkmode.js invert */
 .darkmode--activated img {
+    filter: invert(1) !important;
+}
+
+.darkmode--activated .marquee-inner>span {
+    background-color: var(--bleachred);
     filter: invert(1) !important;
 }
 
