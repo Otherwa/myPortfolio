@@ -199,7 +199,7 @@ a {
 
 @media(max-width: 61.99em) {
     a {
-        font-size: 1rem
+        font-size: 1rem !important;
     }
 }
 
@@ -586,7 +586,7 @@ a:hover {
 .menu-item-link,
 .marquee span {
     white-space: nowrap;
-    font-size: var(--item-font-size);
+    font-size: var(--item-font-size) !important;
     padding: 0 3vw;
     font-weight: 690;
     line-height: 1.35;
