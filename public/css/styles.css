@@ -684,3 +684,8 @@ a:hover {
     color: white;
     font-weight: bolder;
 }
+
+/* Aboutme  */
+.socials .social-link {
+    pointer-events: painted;
+}

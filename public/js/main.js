@@ -21,13 +21,11 @@ swup.hooks.on('page:view', () => {
     sr.reveal('.wrapper', { delay: 100, origin: "bottom" })
     sr.reveal('.wrapper1', { delay: 100, origin: "top" })
     sr.reveal('.wrapper2', { delay: 100, origin: "right" })
-    // sr.reveal('#prj li', { delay: 150, origin: "top" })
-    // sr.reveal('#Back_Arrow_24', { delay: 150, origin: "top" })
     init();
 });
 
 function init() {
-    // This runs after every page change by swup
+    // This runs after every page change by sw
     const username = 'Otherwa';
     const contentList = document.getElementById('contentList');
     console.log(contentList);
@@ -90,3 +88,4 @@ function init() {
         })
 }
 
+init();
