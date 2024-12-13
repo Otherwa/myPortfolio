@@ -1,15 +1,15 @@
 const options = {
-    bottom: '44px', // default: '32px'
-    right: 'unset', // default: '32px'
-    right: '32px', // default: 'unset'
-    time: '0.69s', // default: '0.3s'
-    mixColor: '#eee', // default: '#fff'
-    backgroundColor: '#fff',  // default: '#fff'
-    buttonColorDark: '#000',  // default: '#100f2c'
-    buttonColorLight: '#fff', // default: '#fff'
-    saveInCookies: true, // default: true,
-    label: '💀', // default: ''
-    autoMatchOsTheme: true // default: true
+    bottom: '44px',
+    right: 'unset',
+    right: '32px',
+    time: '0.69s',
+    mixColor: '#eee',
+    backgroundColor: '#fff',
+    buttonColorDark: '#000',
+    buttonColorLight: '#fff',
+    saveInCookies: true,
+    label: '💀',
+    autoMatchOsTheme: true
 }
 
 function addDarkmodeWidget() {

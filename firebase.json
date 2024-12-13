@@ -2,6 +2,29 @@
   "hosting": {
       "site": "0therwa",
       "public": "public",
+      "cleanUrls": true,
+      "rewrites": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/contact.html"
+      },
+      {
+        "source": "/experience",
+        "destination": "/exp.html"
+      },
+      {
+        "source": "/about",
+        "destination": "/about.html"
+      },
+      {
+        "source": "/projects",
+        "destination": "/projects.html"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",

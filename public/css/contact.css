@@ -5,3 +5,15 @@
     align-items: center;
     height: 90vh;
 }
+
+.social svg {
+    transform: scale(1);
+    transition: 0.5s;
+    margin: 1rem;
+}
+
+.social svg:hover {
+    transform: scale(1.5);
+    transition: 0.4s;
+    margin: 2rem;
+}
